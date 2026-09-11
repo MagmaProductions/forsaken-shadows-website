@@ -13,6 +13,11 @@ body {
 #logo {
     width: 200px;
     height: auto;
+
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
