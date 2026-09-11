@@ -1,3 +1,5 @@
 # Forsaken Shadows Website
-Official repository for the Forsaken Shadows website. You shouldn't be here!<br/>
+Official repository for the Forsaken Shadows website.<br/>
+**You shouldn't be here!**<br/>
+<br/>
 https://forsakenshadows.com/
