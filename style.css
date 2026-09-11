@@ -13,3 +13,16 @@ img {
     max-width: 75vw;
     max-height: 75vh;
 }
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
