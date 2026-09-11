@@ -10,6 +10,12 @@ body {
     height: 100vh;
 }
 
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+
 #main {
     max-width: 75vw;
     max-height: 75vh;
