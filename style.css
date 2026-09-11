@@ -26,6 +26,7 @@ footer a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    display: inline-block;
     transition: color 0.2s, transform 0.2s;
 }
 
