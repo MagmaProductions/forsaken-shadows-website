@@ -1,2 +1,2 @@
-# Forsaken Shadows Website Assets
-Official website assets for Forsaken Shadows.
+# Forsaken Shadows Website
+Official website for Forsaken Shadows.
