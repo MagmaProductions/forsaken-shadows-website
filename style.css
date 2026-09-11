@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: gray;
 
     display: flex;
     flex-direction: column;
@@ -18,6 +18,8 @@ body {
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
 }
 
 
@@ -39,6 +41,8 @@ footer a {
     margin: 0 15px;
     display: inline-block;
     transition: color 0.2s, transform 0.2s;
+    
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
 }
 
 footer a:hover {
