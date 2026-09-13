@@ -20,11 +20,15 @@ body {
     
     transform: translateX(-50%);
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
+
+    opacity: 0;
+    
     transition: transform 0.2s;
 }
 
 #logo:hover {
     transform: translateX(-50%) scale(1.1);
+    opacity: 1;
 }
 
 
@@ -49,26 +53,4 @@ body {
 
 #copyright:hover {
     color: white;
-}
-
-footer {
-    position: fixed;
-    bottom: 40px;
-    width: 100%;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    display: inline-block;
-    transition: color 0.2s, transform 0.2s;
-    
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
-}
-
-footer a:hover {
-    color: red;
-    transform: scale(1.1);
 }
