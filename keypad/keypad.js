@@ -1,8 +1,8 @@
 let code = "";
-var tone1 = new Audio(../audio/tone1.mp3);
-var tone2 = new Audio(../audio/tone2.mp3);
-var tone3 = new Audio(../audio/tone3.mp3);
-var tone4 = new Audio(../audio/tone4.mp3);
+var tone1 = new Audio("../audio/tone1.mp3");
+var tone2 = new Audio("../audio/tone2.mp3");
+var tone3 = new Audio("../audio/tone3.mp3");
+var tone4 = new Audio("../audio/tone4.mp3");
 
 var disabled = false;
 
