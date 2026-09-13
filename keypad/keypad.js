@@ -23,7 +23,7 @@ function addNumber(number) {
             document.getElementById("code").style.color = 'limegreen';
 
                         setTimeout(() => {
-                            window.location.href = code;
+                            window.open(code, '_blank');
                             document.getElementById("code").style.color = 'white';
                         }, 1000)
         } else {
