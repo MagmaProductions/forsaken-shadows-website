@@ -46,8 +46,8 @@ body {
 #main {
     position: fixed;
     z-index: -1;
-    height: 50%;
-    width: auto;
+    max-height: 25vh;
+    max-width: 25vw;
 }
 
 #copyright {
