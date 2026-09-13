@@ -59,6 +59,7 @@ body {
     bottom: 40px;
     left: 40px;
     display: inline-block;
+    z-index: 1;
     transition: color 0.2s;
 }
 
