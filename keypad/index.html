@@ -5,14 +5,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="../images/clock.png">
 
-    <meta property="og:title" content="Forsaken Shadows">
-    <meta property="og:image" content="https://forsakenshadows.com/images/preview.png">
-    <meta property="og:url" content="https://forsakenshadows.com">
-    <meta property="og:type" content="website">
+        <meta property="og:title" content="Forsaken Shadows">
+        <meta property="og:image" content="https://forsakenshadows.com/images/preview.png">
+        <meta property="og:url" content="https://forsakenshadows.com">
+        <meta property="og:type" content="website">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Forsaken Shadows">
-    <meta name="twitter:image" content="https://forsakenshadows.com/images/preview.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Forsaken Shadows">
+        <meta name="twitter:image" content="https://forsakenshadows.com/images/preview.png">
+
+    <script src="keypad.js"></script>
+    
 </head>
 
 <body>
@@ -21,9 +24,26 @@
         <img id="logo" src="../images/forsaken shadows.png" alt="Forsaken Shadows">
     </a>
 
-        <!-- Current Teaser -->
-        <img id="main" src="images/keypad.png" alt="keypad">
+      <div id="keypad">
 
+          <img id="main" src="images/keypad.png" alt="keypad">
+          <span id="code">Enter code...</span>
+
+          <button type="button" class="keys key1" onclick="addNumber('1')"></button>
+          <button type="button" class="keys key2" onclick="addNumber('2')"></button>
+          <button type="button" class="keys key3" onclick="addNumber('3')"></button>
+          <button type="button" class="keys key4" onclick="addNumber('4')"></button>
+          <button type="button" class="keys key5" onclick="addNumber('5')"></button>
+          <button type="button" class="keys key6" onclick="addNumber('6')"></button>
+          <button type="button" class="keys key7" onclick="addNumber('7')"></button>
+          <button type="button" class="keys key8" onclick="addNumber('8')"></button>
+          <button type="button" class="keys key9" onclick="addNumber('9')"></button>
+          <button type="button" class="keys key0" onclick="addNumber('0')"></button>
+
+          <button type="button" class="keys backspace" onclick="backspace()"></button>
+
+      </div>
+    
     <p id="copyright">Five Nights at Freddy’s and all related characters, assets, and trademarks are the property of Scott Cawthon. Forsaken Shadows is a fan-made project that is in no way affiliated with or endorsed by him. Forsaken Shadows is created out of appreciation for the Five Nights at Freddy’s series and is intended for entertainment purposes only.</p>
     
 </body>
