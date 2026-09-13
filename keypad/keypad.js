@@ -6,7 +6,7 @@ var tone4 = new Audio("../audio/tone4.mp3");
 
 var disabled = false;
 
-let secrets = ['2006', '1999'];
+let secrets = ['2006', '1999', '0311'];
 
 function addNumber(number) {
     if(disabled == false) {
