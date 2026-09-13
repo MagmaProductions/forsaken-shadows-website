@@ -20,22 +20,23 @@ function addNumber(number) {
 
         if (secrets.includes(code)) {
             tone3.play()
+            document.getElementById("code").style.color = 'limegreen';
+
                         setTimeout(() => {
-                            window.open(code, '_blank');
-                            disabled = false
-                            code = "";
-                            document.getElementById("code").textContent = "Enter code...";
+                            window.location.href = code;
+                            document.getElementById("code").style.color = 'white';
                         }, 1000)
-      } else {
+        } else {
         tone4.play()
-        document.getElementById("code").textContent = "ACCESS DENIED";
+        document.getElementById("code").style.color = 'red';
 
                         setTimeout(() => {
                             disabled = false
                             code = "";
                             document.getElementById("code").textContent = "Enter code...";
+                            document.getElementById("code").style.color = 'white';
                         }, 1000)
-      }
+                      }
     } else {
         tone1.play()
     }
@@ -44,8 +45,10 @@ function addNumber(number) {
 }
 
 function backspace() {
-    code = code.slice(0, -1);
-    document.getElementById("code").textContent = code || "Enter code...";
-    tone2.volume = 0.25;
-    tone2.play()
+     if(disabled == false) {
+        code = code.slice(0, -1);
+        document.getElementById("code").textContent = code || "Enter code...";
+        tone2.volume = 0.25;
+        tone2.play()
+    }
 }
