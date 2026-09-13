@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "DigitGraphics";
+    src: url("../fonts/DigitGraphics.woff2") format("woff2");
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -31,10 +36,23 @@ body {
     opacity: 1;
 }
 
+#keypad {
+  position: relative;
+}
 
 #main {
-    max-width: 75vw;
-    max-height: 75vh;
+    display: block;
+}
+
+#code {
+    font-family: "DigitGraphics", sans-serif;
+    position: absolute;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    top: 72px;
+    left: 67px;
+    word-spacing: 5px;
 }
 
 #copyright {
@@ -53,4 +71,70 @@ body {
 
 #copyright:hover {
     color: white;
+}
+
+.keys {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  transform: translateX(66px) translateY(73px);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.key1 {
+  top: 47px;
+  left: -10px;
+}
+
+.key2 {
+  top: 47px;
+  left: 73px;
+}
+
+.key3 {
+  top: 47px;
+  left: 155px;
+}
+
+.key4 {
+  top: 129px;
+  left: -10px;
+}
+
+.key5 {
+  top: 129px;
+  left: 73px;
+}
+
+.key6 {
+  top: 129px;
+  left: 155px;
+}
+
+.key7 {
+  top: 210px;
+  left: -10px;
+}
+
+.key8 {
+  top: 210px;
+  left: 73px;
+}
+
+.key9 {
+  top: 210px;
+  left: 155px;
+}
+
+.key0 {
+  top: 293px;
+  left: 155px;
+}
+
+.backspace {
+  top: 293px;
+  left: -10px;
+  width: 152px;
 }
