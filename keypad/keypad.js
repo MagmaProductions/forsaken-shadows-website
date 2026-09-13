@@ -23,10 +23,13 @@ function addNumber(number) {
             document.getElementById("code").style.color = 'limegreen';
 
                         setTimeout(() => {
+                            disabled = false
                             window.open(code, '_blank');
+                            code = "";
+                            document.getElementById("code").textContent = "Enter code...";
                             document.getElementById("code").style.color = 'white';
                         }, 1000)
-        } else {
+      } else {
         tone4.play()
         document.getElementById("code").style.color = 'red';
 
@@ -36,7 +39,7 @@ function addNumber(number) {
                             document.getElementById("code").textContent = "Enter code...";
                             document.getElementById("code").style.color = 'white';
                         }, 1000)
-                      }
+      }
     } else {
         tone1.play()
     }
