@@ -6,7 +6,7 @@ var tone4 = new Audio("../audio/tone4.mp3");
 
 var disabled = false;
 
-let secrets = ['2006'];
+let secrets = ['2006', '1999'];
 
 function addNumber(number) {
     if(disabled == false) {
@@ -21,7 +21,10 @@ function addNumber(number) {
         if (secrets.includes(code)) {
             tone3.play()
                         setTimeout(() => {
-                            window.location.href = code;
+                            window.open(code, '_blank');
+                            disabled = false
+                            code = "";
+                            document.getElementById("code").textContent = "Enter code...";
                         }, 1000)
       } else {
         tone4.play()
