@@ -1,4 +1,5 @@
 let code = "";
+let prevCode = "";
 var tone1 = new Audio("../audio/tone1.mp3");
 var tone2 = new Audio("../audio/tone2.mp3");
 var tone3 = new Audio("../audio/tone3.mp3");
@@ -24,10 +25,11 @@ function addNumber(number) {
 
                         setTimeout(() => {
                             disabled = false
+                            prevCode = code;
                             code = "";
                             document.getElementById("code").textContent = "Enter code...";
                             document.getElementById("code").style.color = 'white';
-                            window.location.href = code;
+                            window.location.href = prevCode;
                         }, 1000)
       } else {
         tone4.play()
