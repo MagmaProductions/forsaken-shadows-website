@@ -24,10 +24,10 @@ function addNumber(number) {
 
                         setTimeout(() => {
                             disabled = false
-                            window.open(code, '_blank');
                             code = "";
                             document.getElementById("code").textContent = "Enter code...";
                             document.getElementById("code").style.color = 'white';
+                            window.location.href = code;
                         }, 1000)
       } else {
         tone4.play()
